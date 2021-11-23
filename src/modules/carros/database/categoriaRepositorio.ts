@@ -42,7 +42,6 @@ class CategoriaRepositorio implements ICategoriaRepository{
 
   //Verifica se o nome de uma categoria já existe no banco de dados e a retorna caso tenha
   findByName(nome:string): Categoria{
-    console.log("CHEGUEI NA FINDBYNAME")
     const categoriaExiste = this.categorias.find((categoria) => categoria.nome === nome)
     return categoriaExiste
   }

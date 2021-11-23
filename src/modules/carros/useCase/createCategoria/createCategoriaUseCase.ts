@@ -23,7 +23,6 @@ class CreateCategoriaUseCase{
       this.categoriaRepositorio.create({nome, descricao})
       // return res.status(200).json({menssagem: "Categoria dicionada com sucesso"})
     }
-    this.categoriaRepositorio.create({nome, descricao})
 
   }
 }

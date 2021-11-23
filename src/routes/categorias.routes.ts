@@ -1,7 +1,7 @@
 import {Router} from 'express'
-import CategoriaRepositorio from '../modules/carros/database/categoriaRepositorio'
 import { createCategoriaController } from '../modules/carros/useCase/createCategoria'
-import CreateCategoriaUseCase from '../modules/carros/useCase/createCategoria/createCategoriaUseCase'
+import { listCategoriaController } from '../modules/carros/useCase/ListCategoria'
+
 
 // import Categoria from '../models/categoriaModels'  
 
@@ -15,8 +15,8 @@ categoriaRotas.post("/categoria", (req, res)=>{
 
 })
 
-// categoriaRotas.get("/categoria", (req, res)=>{
-//     return res.json({categoria: categoriaRepositorio.list()})
-//   })
+categoriaRotas.get("/categoria", (req, res)=>{
+    return listCategoriaController.handle(req, res)
+  })
 
 export default categoriaRotas
