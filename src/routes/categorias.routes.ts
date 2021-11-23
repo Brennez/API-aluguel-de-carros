@@ -18,5 +18,10 @@ categoriaRotas.post("/categoria", (req, res)=>{
 categoriaRotas.get("/categoria", (req, res)=>{
     return listCategoriaController.handle(req, res)
   })
+  
+//TEM QUE FALAR PRO SERVIDOR USAR ESSA ROTA
+// categoriaRotas.post("/especificacao", (req, res) =>{
+//   return res.json({message: "ola"})
+// })
 
 export default categoriaRotas

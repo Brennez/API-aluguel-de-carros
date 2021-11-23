@@ -14,7 +14,7 @@ class CreateCategoriaUseCase{
   }
 
   execute({nome, descricao}: IRequest): void{
-    console.log("OPA CHEGUEI AQUI TAMBÉM (Função execute)")
+    // console.log("OPA CHEGUEI AQUI TAMBÉM (Função execute)")
     const categoriaExiste = this.categoriaRepositorio.findByName(nome)
   //Se o nome ñ existe então n retorna nada, se existe nome então retorna onome
     if(categoriaExiste){
