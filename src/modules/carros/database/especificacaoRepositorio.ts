@@ -32,7 +32,7 @@ class EspecificacaoRepositorio implements IEspecificacaoRepository{
   }
   
   list(): Especificacao[] {
-    throw new Error("Method not implemented.");
+    return this.especificacoes
   }
   findByName(nome: string): Especificacao {
     throw new Error("Method not implemented.");
