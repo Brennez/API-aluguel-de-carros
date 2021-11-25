@@ -1,4 +1,4 @@
-import CategoriaRepositorio from "../../database/categoriaRepositorio";
+import CategoriaRepositorio from "../../database/implementations/categoriaRepositorio";
 import CreateCategoriaController from "./CreateCategoriaController";
 import CreateCategoriaUseCase from "./createCategoriaUseCase";
 

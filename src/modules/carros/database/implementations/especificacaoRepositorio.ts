@@ -1,5 +1,5 @@
-import Especificacao from "../models/especificacaoModel";
-import {IEspecificacao, IEspecificacaoRepository } from "./IEspecificacaoRepository";
+import Especificacao from "../../models/especificacaoModel";
+import {IEspecificacao, IEspecificacaoRepository } from "../IEspecificacaoRepository";
 
 class EspecificacaoRepositorio implements IEspecificacaoRepository{
   //instancia do vetor de especificacoes
@@ -35,7 +35,8 @@ class EspecificacaoRepositorio implements IEspecificacaoRepository{
     return this.especificacoes
   }
   findByName(nome: string): Especificacao {
-    throw new Error("Method not implemented.");
+    const especificacaoExist = this.especificacoes.find((especificacao) => especificacao.nome === nome)
+    return especificacaoExist
   }
 
 }

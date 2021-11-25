@@ -1,5 +1,5 @@
-import CategoriaRepositorio from "../../database/categoriaRepositorio";
-import ListCategoriaController from "./ListCategoriaController";
+import CategoriaRepositorio from "../../database/implementations/categoriaRepositorio";
+import ListCategoriaController from "./listCategoriaController";
 import ListCategoriaUseCase from "./listCategoriaUseCase";
 
 

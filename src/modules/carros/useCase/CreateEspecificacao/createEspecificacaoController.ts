@@ -1,4 +1,4 @@
-import CreateEspecificacaoUseCase from "./createCategoriaUseCase"
+import CreateEspecificacaoUseCase from "./createEspecificacaoUseCase"
 import {Request, Response} from "express"
 
 class createEspecificacaoController{

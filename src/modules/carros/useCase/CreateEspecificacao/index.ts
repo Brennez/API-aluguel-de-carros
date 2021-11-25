@@ -1,4 +1,4 @@
-import EspecificacaoRepositorio from "../../database/especificacaoRepositorio";
+import EspecificacaoRepositorio from "../../database/implementations/especificacaoRepositorio";
 import CreateEspecificacaoUseCase from "./createEspecificacaoUseCase";
 import CreateEspecificacaoController from "./createEspecificacaoController";
 

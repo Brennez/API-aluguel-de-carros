@@ -1,5 +1,5 @@
-import Categoria from "../models/categoriaModels";
-import { ICategoriaRepository, Icategoria } from "./ICategoriaRepository";
+import Categoria from "../../models/categoriaModels";
+import { ICategoriaRepository, Icategoria } from "../ICategoriaRepository";
 
 // interface Icategoria{
 //   nome: string

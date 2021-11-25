@@ -12,7 +12,12 @@ class CreateEspecificacaoUseCase{
   }
 
   execute({nome, descricao}: IRequest): void{
-    this.especificacaoRepository.create({nome, descricao})
+    const especificacao = this.especificacaoRepository.findByName(nome)
+    if(especificacao){
+      throw new Error(`Especificacao ${nome} já existe :/`)
+    }else{
+      this.especificacaoRepository.create({nome, descricao})
+    }
   }
 }
 
